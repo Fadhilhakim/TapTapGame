@@ -3,14 +3,14 @@
             padding: 0px;
             font-family: Arial;
         }
-        #main1 {
+        .main1 {
             background-color: #F34657;
             width: 100%;
             height: 50%;
             z-index: -1;
         }
         
-        #main2 {
+        .main2 {
             background-color: #4800FF;
             width: 100%;
             height: 50%;
