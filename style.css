@@ -1,45 +1,71 @@
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial;
-        }
-        .main1 {
-            background-color: #F34657;
-            width: 100%;
-            height: 50%;
-            z-index: -1;
-        }
-        
-        .main2 {
-            background-color: #4800FF;
-            width: 100%;
-            height: 50%;
-            z-index: -1;
-        }
-        
-        .txt {
-            text-align: center;
-            padding: 30px;
-            position: absolute;
-            border: 5px solid #333;
-            background-color: white;
-        }
-        
-        .position {
-            margin-left: 24%;
-            margin-top: 65%;
-        }
-        
-        .visible {
-            display: none;
-        }
-        
-        .win {
-            margin-left: 14%;
-            margin-top: 65%;
-        }
-        
-        a {
-            text-decoration: none;
-            color: blue;
-        }
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+#hide {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.position {
+    z-index: 2;
+}
+
+.win {
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide the win message initially */
+.visible {
+    display: none;
+}
+
+.main1, .main2 {
+    width: 100%;
+    bottom: 0;
+    transition: height 1s;
+}
+
+.main1 {
+    height: 50%;
+    background-color: red;
+}
+
+.main2 {
+    height: 50%;
+    background-color: blue;
+}
+
+/* Button link styling */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+}
